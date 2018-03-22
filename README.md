@@ -170,7 +170,7 @@ public class Movie {
 ````
 
 ##### 7. Create an layout xml named movie_list_row.xml with the below code. This layout file renders a single row in recycler view by displaying movie name, genre and year of release.
-movie_list_row.java
+movie_list_row.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -378,10 +378,7 @@ movie_list_row.xml
     android:clickable="true"
     android:focusable="true"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/row_padding_vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/row_padding_vertical">
+    android:layout_margin="@dimen/row_padding_vertical">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv_movie"
@@ -391,7 +388,8 @@ movie_list_row.xml
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="@dimen/row_padding_vertical">
 
             <TextView
                 android:id="@+id/title"
