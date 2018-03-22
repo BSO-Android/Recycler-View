@@ -368,8 +368,8 @@ public class MainActivity extends AppCompatActivity {
 ##### Now if you run the app, you can see the movies displayed in a list manner.
 
 ##### 10. Create an layout xml with card view, so modify movie_list_row.xml with the below code.
-movie_list_row.java
-```java
+movie_list_row.xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
